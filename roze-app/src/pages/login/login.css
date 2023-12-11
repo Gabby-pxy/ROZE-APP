@@ -1,0 +1,88 @@
+.login {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Add this */
+    background: url("https://i.pinimg.com/originals/28/80/52/288052d49c28974342ba079c5ae9e1f5.gif");
+    background-size: cover;
+}
+
+.login::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1.0), transparent);
+    z-index: -1;
+}
+
+.loginTitle {
+    font-size: 100px;
+    font-family: 'Allura', cursive;
+    color: rgba(113, 11, 76, 0.891);
+    background-color: rgba(247, 247, 247, 0.5); /* Background color for the circle */
+    border-radius: 50%; /* Makes it a circle */
+    width: fit-content; /* Adjust the width to your preference */
+    padding: 15px; /* Adjust the padding to control the size of the circle */
+}
+
+.loginForm {
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the opacity if needed */
+}
+
+.loginForm > label{
+    margin: 15px 0;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+
+.loginInput{
+    padding: 10px;
+    background-color: rgba(216, 214, 214, 0.925);
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.loginButton{
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: lightcoral;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+}
+
+.loginButton:disabled{
+    cursor: not-allowed;
+    background-color: rgb(241, 163, 163);
+}
+
+
+.loginRegisterButton{
+    position: absolute;
+    font-size: 15px;
+    top: 20px;
+    right: 20px;
+    background-color: rgb(164, 32, 109);
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Jost', sans-serif;
+}

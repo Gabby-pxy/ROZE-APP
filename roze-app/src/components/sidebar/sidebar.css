@@ -1,0 +1,84 @@
+.sidebar {
+    flex: 3;
+    margin: 20px;
+    height: auto; /* Instead of a fixed height */
+    max-width: 200px; /* Set a maximum width to ensure it doesn't get too wide */
+    padding-bottom: 30px;
+    background-color: bisque;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebarItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensure each sidebar item takes full width */
+}
+
+.sidebarTitle {
+    margin: 10px;
+    padding: 5px;
+    width: 80%;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    font-family: 'Bad Script', cursive;
+    font-size: 12px;
+    color: #222;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 20px;
+    /* Center the title vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebarItem > img {
+    margin-top: 15px;
+    width: 100%; /* Make sure images take the full width */
+}
+
+.sidebar > p {
+    padding: 30px;
+    width: 100%; /* Make sure paragraphs take the full width */
+}
+
+.sidebarList {
+    list-style: none;
+    margin-bottom: 30px;
+    padding: 1; /* Remove default padding on lists */
+}
+
+.sidebarListItem {
+    width: 100%; /* Each list item takes full width */
+    margin-top: 15px;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+}
+
+.sidebarDescription {
+    font-family: 'Ysabeau Office', sans-serif;
+    font-size: 14px; 
+    color: #333; 
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.sidebarSocial {
+    margin-top: 15px;
+    width: 70%; /* Ensure the social section takes full width */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebarIcon {
+    font-size: 16px;
+    cursor: pointer;
+}

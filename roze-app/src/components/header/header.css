@@ -1,0 +1,31 @@
+.header{
+    margin-top: 60px;
+}
+
+.headerTitles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Allura', cursive;
+    color: rgba(113, 11, 76, 0.891);
+}
+
+.headerTitleSm{
+    position: absolute;
+    top: 15%;
+    font-size: 30px; 
+    font-family: 'Jost', sans-serif;
+}
+
+.headerTitleLg{
+    position: absolute;
+    top: 20%;
+    font-size: 120px; 
+}
+
+.headerImg{
+    width: 100%;
+    height: 450px;
+    margin-top: 80px;
+    object-fit: cover;
+}

@@ -1,0 +1,84 @@
+.register {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Add this */
+    background: url("https://i.pinimg.com/originals/7a/f6/9e/7af69e9ff75212c1880f4292a395157d.gif");
+    background-size: cover;
+}
+
+.register::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1.0), transparent);
+    z-index: -1;
+}
+
+.registerTitle {
+    font-size: 100px;
+    font-family: 'Allura', cursive;
+    color: rgba(113, 11, 76, 0.891);
+    background-color: rgba(247, 247, 247, 0.5); /* Background color for the circle */
+    border-radius: 50%; /* Makes it a circle */
+    width: fit-content; /* Adjust the width to your preference */
+    padding: 15px; /* Adjust the padding to control the size of the circle */
+}
+
+.registerForm {
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the opacity if needed */
+}
+
+.registerForm > label{
+    margin: 15px 0;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+
+.registerInput{
+    padding: 10px;
+    background-color: rgba(216, 214, 214, 0.925);
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.registerButton{
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: rgb(164, 32, 109);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    
+}
+
+
+.registerLoginButton{
+    position: absolute;
+    font-size: 15px;
+    top: 20px;
+    right: 20px;
+    background-color: lightcoral;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Jost', sans-serif;
+}
